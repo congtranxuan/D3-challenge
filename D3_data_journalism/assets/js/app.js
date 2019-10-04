@@ -149,7 +149,7 @@ function makeResponsive() {
   .attr("class", "d3-tip")
   .offset([80, -60])
   .html(function(d) {
-    return (`${d.state}<br>${labelX}${d[chosenXAxis]}%<br>${labelY}${d[chosenYAxis]}%`);
+    return (`${d.state}<br>${labelX}${d[chosenXAxis]}${labelX==="Age: "?"":"%"}<br>${labelY}${d[chosenYAxis]}%`);
   });
 
 circlesGroup.call(toolTip);
