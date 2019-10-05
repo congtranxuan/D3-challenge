@@ -162,40 +162,6 @@ circlesGroup.on("mouseover", function(data) {
     toolTip.hide(data);
   });
 
-
-  // var toolTip = d3.select("svg").select("g")
-  //     .append("div");
-  //     //.attr('class', 'tooltip');
-  
-  // // Step 2: Create "mouseover" event listener to display tooltip
-  // circlesGroup.on("mouseover", function(d) {
-  //   toolTip.style("display", "block");
-  //   toolTip
-  //       .html(`${d.state}<br>${labelX}${d[chosenXAxis]}%<br>${labelY}${d[chosenYAxis]}%`)
-  //       .style("left", d3.event.pageX + "px")
-  //       .style("top", d3.event.pageY + "px");
-  //     })
-  //   // Step 3: Create "mouseout" event listener to hide tooltip
-  //   .on("mouseout", function() {
-  //     toolTip.style("display", "none");
-  //   });
-  
-  // var toolTip = d3.tip()
-  // .attr("class", "tooltip")
-  // .html(function(d) {
-  //   return (`${d.state}<br>${labelX} ${d[chosenXAxis]}<br> ${labelY} ${d[chosenYAxis]}`);
-  // });
-
-  // circlesGroup.call(toolTip);
-
-  // circlesGroup.on("mouseover", function(data) {
-  //   toolTip.show(data);
-  // })
-  //   // onmouseout event
-  //   .on("mouseout", function(data, index) {
-  //     toolTip.hide(data);
-  //   });
-
   return circlesGroup;
 }
 
